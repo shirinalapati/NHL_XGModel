@@ -19,7 +19,9 @@ data/processed/*.db
 models/*.joblib
 models/*.pkl
 outputs/*.csv
+!outputs/coefficients.csv
 outputs/*.parquet
+!outputs/test_shot_predictions.parquet
 outputs/*.html
 .ipynb_checkpoints/
 .streamlit/secrets.toml
