@@ -1,0 +1,12 @@
+{
+  "train_rows": 47232,
+  "test_rows": 30250,
+  "train_goals": 3479,
+  "test_goals": 2259,
+  "train_roc_auc": 0.7348684017804171,
+  "test_roc_auc": 0.7267926851654035,
+  "train_log_loss": 0.23948381380879272,
+  "test_log_loss": 0.24447010203300473,
+  "train_brier": 0.06464999639413467,
+  "test_brier": 0.06608757315872972
+}
