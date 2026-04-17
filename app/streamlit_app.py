@@ -3,12 +3,21 @@ Interactive exploration for the NHL xG portfolio app.
 
 Run from repository root:
     PYTHONPATH=. streamlit run app/streamlit_app.py
+
+Streamlit Cloud does not set PYTHONPATH; the block below adds the repo root so
+``import src`` works when the main file is ``app/streamlit_app.py``.
 """
 
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+_root_str = str(ROOT)
+if _root_str not in sys.path:
+    sys.path.insert(0, _root_str)
 
 import pandas as pd
 import plotly.express as px
@@ -17,7 +26,6 @@ import streamlit as st
 
 from src.config import TEST_SEASON_ID, nhl_team_display_name
 
-ROOT = Path(__file__).resolve().parents[1]
 OUTPUTS = ROOT / "outputs"
 MODELS = ROOT / "models"
 
