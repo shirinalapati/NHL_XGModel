@@ -1,7 +1,5 @@
 # White Paper: NHL Expected Goals (xG) — End-to-End Analytics Platform
 
-**Version:** 1.0  
-**Audience:** Technical stakeholders, hiring managers, and collaborators evaluating this portfolio system.  
 **Scope:** Data acquisition, relational storage, interpretable modeling, time-based evaluation, and interactive exploration.
 
 ---
@@ -233,7 +231,7 @@ The codebase is intended to live in **Git** (e.g., GitHub) with **data** and **l
 
 ## 12. Conclusion
 
-This project delivers a **credible, end-to-end xG baseline**: audited SQL for sequence context, explicit rink geometry, a **time-gated** evaluation protocol, and a **transparent** linear model with a usable Streamlit front end. It is a solid foundation for coursework, interviews, or iteration toward production-grade hockey analytics—provided operators respect data terms, validate the held-out window in their own ingest runs, and interpret small-sample leaderboards with care.
+This project delivers a **credible, end-to-end xG baseline**: audited SQL for sequence context, explicit rink geometry, a **time-gated** evaluation protocol, and a **transparent** linear model with a usable Streamlit front end.
 
 ---
 
